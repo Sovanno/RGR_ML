@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 import joblib
-#import tensorflow as tf
+import tensorflow as tf
 #import keras
 #import bias
 
