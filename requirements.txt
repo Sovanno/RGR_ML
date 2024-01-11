@@ -9,3 +9,4 @@ numpy
 joblib
 bias
 keras
+kernel
