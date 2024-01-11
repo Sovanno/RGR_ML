@@ -5,8 +5,8 @@ import seaborn as sns
 import numpy as np
 import joblib
 import tensorflow as tf
-#import keras
-#import bias
+import keras
+import bias
 
 
 
@@ -125,7 +125,7 @@ def show_predict_dataset_page():
     model3 = joblib.load("Project/bagging-one_model.pkl")
     model4 = joblib.load("Project/gradient_boosting_model.pkl")
     model5 = joblib.load("Project/stacking_model.pkl")
-    model6 = joblib.load("Project/NeuralNetwork.h5")
+    model6 = keras.models.load_model("Project/NeuralNetwork.h5")
     uploaded_file = st.file_uploader("Загрузите файл данных (CSV)", type="csv")
 
     if uploaded_file:
