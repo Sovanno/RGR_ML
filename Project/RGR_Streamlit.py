@@ -8,8 +8,6 @@ import tensorflow as tf
 import keras
 import bias
 
-
-
 def mean_absolute_percentage_error(y_true, y_pred):
     mape = np.mean(np.abs((y_true - y_pred) / y_true))
     return mape
@@ -163,7 +161,7 @@ def show_prediction_page():
     model3 = joblib.load("Project/bagging-one_model.pkl")
     model4 = joblib.load("Project/gradient_boosting_model.pkl")
     model5 = joblib.load("Project/stacking_model.pkl")
-    model6 = joblib.load("Project/NeuralNetwork.pkl")
+    model6 = keras.models.load_model("Project/NeuralNetwork.h5")
 
     uploaded_file = st.file_uploader("Загрузите файл данных (CSV)", type="csv")
     if uploaded_file:
