@@ -5,5 +5,5 @@ matplotlib
 seaborn
 tensorflow
 streamlit
-pickle
 numpy
+joblib
